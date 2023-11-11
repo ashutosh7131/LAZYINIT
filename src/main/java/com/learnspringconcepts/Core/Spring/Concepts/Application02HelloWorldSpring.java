@@ -10,7 +10,9 @@ public class Application02HelloWorldSpring {
         System.out.println(context.getBean("name"));
         System.out.println(context.getBean("age"));
         System.out.println(context.getBean("person"));
-        System.out.println(context.getBean("address"));
+        System.out.println(context.getBean("Ashutosh Address"));
+        System.out.println(context.getBean(Address.class));
+        System.out.println(context.getBean("person2MethodCall"));
 
 
     }
