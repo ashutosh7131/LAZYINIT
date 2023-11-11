@@ -10,4 +10,9 @@ public class HelloWorldConfiguration {
     public String name(){
         return "Ashutosh Shriansh";
     }
+
+    @Bean
+    public int age(){
+        return 37;
+    }
 }

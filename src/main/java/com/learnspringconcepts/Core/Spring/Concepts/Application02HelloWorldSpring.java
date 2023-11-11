@@ -8,6 +8,7 @@ public class Application02HelloWorldSpring {
 
         var context = new AnnotationConfigApplicationContext(HelloWorldConfiguration.class);
         System.out.println(context.getBean("name"));
+        System.out.println(context.getBean("age"));
 
 
     }
