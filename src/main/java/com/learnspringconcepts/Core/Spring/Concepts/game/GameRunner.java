@@ -3,16 +3,16 @@ package com.learnspringconcepts.Core.Spring.Concepts.game;
 public class GameRunner {
 
     //MarioGame marioGame;
-    SuperContraGame superContraGame;
-    public GameRunner(SuperContraGame superContraGame) {
-        this.superContraGame = superContraGame;
+    GamingConsole gamingConsole;
+    public GameRunner(GamingConsole gamingConsole) {
+        this.gamingConsole = gamingConsole;
     }
 
     public void run() {
-        System.out.println("Running game  --->>>  " +    superContraGame);
-        superContraGame.up();
-        superContraGame.down();
-        superContraGame.left();
-        superContraGame.right();
+        System.out.println("Running game  --->>>  " +    gamingConsole);
+        gamingConsole.up();
+        gamingConsole.down();
+        gamingConsole.left();
+        gamingConsole.right();
     }
 }

@@ -1,6 +1,6 @@
 package com.learnspringconcepts.Core.Spring.Concepts.game;
 
-public class MarioGame {
+public class MarioGame implements GamingConsole{
 
     public void up(){
 

@@ -1,6 +1,6 @@
 package com.learnspringconcepts.Core.Spring.Concepts.game;
 
-public class SuperContraGame {
+public class SuperContraGame implements GamingConsole{
 
     public void up(){
 
