@@ -2,6 +2,7 @@ package com.learnspringconcepts.Core.Spring.Concepts;
 
 import com.learnspringconcepts.Core.Spring.Concepts.game.GameRunner;
 import com.learnspringconcepts.Core.Spring.Concepts.game.MarioGame;
+import com.learnspringconcepts.Core.Spring.Concepts.game.SuperContraGame;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,7 +14,8 @@ public class Application {
 
 		//SpringApplication.run(Application.class, args);
 		var marioGame = new MarioGame();
-		var gameRunner = new GameRunner(marioGame);
+		var superContraGame = new SuperContraGame();
+		var gameRunner = new GameRunner(superContraGame);
 		gameRunner.run();
 	}
 
