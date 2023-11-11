@@ -30,7 +30,12 @@ public class HelloWorldConfiguration {
         return new Person(name(),age(),address());
     }
 
-    @Bean(name="Ashutosh Address")
+    @Bean
+    public Person person3Parameters(String name,int age,Address Ashutosh_Address){
+        return new Person(name,age,Ashutosh_Address);
+    }
+
+    @Bean(name="Ashutosh_Address")
     public Address address(){
         return new Address("Bokaro Steel City","Jharkhand");
     }
