@@ -1,4 +1,4 @@
-package com.learnspringconcepts.Core.Spring.Concepts;
+package com.learnspringconcepts.Core.Spring.Concepts.helloWorld;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
