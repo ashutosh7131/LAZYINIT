@@ -31,13 +31,18 @@ public class HelloWorldConfiguration {
     }
 
     @Bean
-    public Person person3Parameters(String name,int age,Address Ashutosh_Address){
-        return new Person(name,age,Ashutosh_Address);
+    public Person person3Parameters(String name,int age,Address Ashutosh_Address1){
+        return new Person(name,age,Ashutosh_Address1);
     }
 
     @Bean(name="Ashutosh_Address")
     public Address address(){
         return new Address("Bokaro Steel City","Jharkhand");
+    }
+
+    @Bean(name="Ashutosh_Address1")
+    public Address address1(){
+        return new Address("Dhanbad","Jharkhand");
     }
 
 
