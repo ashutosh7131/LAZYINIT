@@ -9,7 +9,6 @@ public class Application01 {
 
 	public static void main(String[] args) {
 
-
 		//SpringApplication.run(Application.class, args);
 		//var game = new MarioGame();
 		//var game = new SuperContraGame();
