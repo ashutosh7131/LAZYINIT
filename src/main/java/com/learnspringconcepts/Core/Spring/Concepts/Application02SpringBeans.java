@@ -8,8 +8,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+@SpringBootApplication
 @Configuration
-class GamingConfig {
+public class Application02SpringBeans {
 
 	@Bean
 	public GamingConsole game(){
@@ -20,15 +21,11 @@ class GamingConfig {
 	public GameRunner gameRunner(GamingConsole game){
 		return new GameRunner(game);
 	}
-}
-
-@SpringBootApplication
-public class Application02SpringBeans {
 
 	public static void main(String[] args) {
 
 
-		try (var context = new AnnotationConfigApplicationContext(GamingConfig.class)) {
+		try (var context = new AnnotationConfigApplicationContext(Application02SpringBeans.class)) {
 			context.getBean(GamingConsole.class).up();
 			context.getBean(GameRunner.class).run();
 		}
