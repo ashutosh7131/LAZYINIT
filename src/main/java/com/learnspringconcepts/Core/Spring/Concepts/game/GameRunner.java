@@ -4,8 +4,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class GameRunner {
-
-    //MarioGame marioGame;
     GamingConsole gamingConsole;
     public GameRunner(GamingConsole gamingConsole) {
         this.gamingConsole = gamingConsole;
