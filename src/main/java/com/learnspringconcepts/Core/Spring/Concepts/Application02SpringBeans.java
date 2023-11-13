@@ -9,11 +9,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Application02SpringBeans {
 
-	@Bean
-	public GameRunner gameRunner(GamingConsole game){
-		return new GameRunner(game);
-	}
-
 	public static void main(String[] args) {
 
 
