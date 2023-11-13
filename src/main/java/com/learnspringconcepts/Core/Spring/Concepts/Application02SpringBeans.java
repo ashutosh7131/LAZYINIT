@@ -13,11 +13,6 @@ import org.springframework.context.annotation.Configuration;
 public class Application02SpringBeans {
 
 	@Bean
-	public GamingConsole game(){
-		return new PacManGame();
-	}
-
-	@Bean
 	public GameRunner gameRunner(GamingConsole game){
 		return new GameRunner(game);
 	}
