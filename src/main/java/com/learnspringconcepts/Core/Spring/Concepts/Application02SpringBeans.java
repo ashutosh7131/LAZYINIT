@@ -3,8 +3,6 @@ package com.learnspringconcepts.Core.Spring.Concepts;
 import com.learnspringconcepts.Core.Spring.Concepts.config.GamingConfig;
 import com.learnspringconcepts.Core.Spring.Concepts.game.GameRunner;
 import com.learnspringconcepts.Core.Spring.Concepts.game.GamingConsole;
-import com.learnspringconcepts.Core.Spring.Concepts.game.PacManGame;
-import com.learnspringconcepts.Core.Spring.Concepts.helloWorld.HelloWorldConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
