@@ -10,10 +10,20 @@ import java.util.Arrays;
 
 @Component
 class YourBuisnessClass{
-	@Autowired
 	Dependency1 dependency1;
-	@Autowired
 	Dependency2 dependency2;
+
+	@Autowired
+	public void setDependency1(Dependency1 dependency1) {
+		System.out.println("Using Setter Injection on Dependency1");
+		this.dependency1 = dependency1;
+	}
+
+	@Autowired
+	public void setDependency2(Dependency2 dependency2) {
+		System.out.println("Using Setter Injection on Dependency2");
+		this.dependency2 = dependency2;
+	}
 
 	@Override
 	public String toString() {
