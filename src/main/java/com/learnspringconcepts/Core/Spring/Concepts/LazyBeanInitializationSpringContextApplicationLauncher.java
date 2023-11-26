@@ -7,15 +7,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
-
 @ComponentScan
 @Configuration
-public class LazyBeanIntializationSpringContextApplicationLauncher {
+public class LazyBeanInitializationSpringContextApplicationLauncher {
 
     public static void main(String[] args) {
 
-        try (var context = new AnnotationConfigApplicationContext(LazyBeanIntializationSpringContextApplicationLauncher.class)) {
+        try (var context = new AnnotationConfigApplicationContext(LazyBeanInitializationSpringContextApplicationLauncher.class)) {
 
             //Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
             System.out.println("Context Init");
