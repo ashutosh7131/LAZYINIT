@@ -18,6 +18,8 @@ public class LazyBeanIntializationSpringContextApplicationLauncher {
         try (var context = new AnnotationConfigApplicationContext(LazyBeanIntializationSpringContextApplicationLauncher.class)) {
 
             //Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+            System.out.println("Context Init");
+            context.getBean(B.class).doSomething();
 
 
         }
@@ -30,11 +32,10 @@ public class LazyBeanIntializationSpringContextApplicationLauncher {
 }
 
 @Component
-//@Lazy
 class A{}
 
 @Component
-@Lazy(value = true)
+@Lazy
 class B{
 
     private A a;
@@ -43,6 +44,11 @@ class B{
     public B(A a) {
       System.out.println("Some Init Logic");
         this.a = a;
+    }
+
+    public void doSomething(){
+
+        System.out.println("Do Something");
     }
 }
 
